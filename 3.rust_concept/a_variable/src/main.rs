@@ -21,5 +21,5 @@ fn main() {
     println!("The value of spaces is: {}", spaces);
 
     let mut spaces = "   ";
-    spaces = spaces.len();  // can't change the type of variable
+    // spaces = spaces.len();  // can't change the type of variable
 }
