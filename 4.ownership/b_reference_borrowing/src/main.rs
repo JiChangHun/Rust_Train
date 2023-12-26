@@ -26,6 +26,7 @@ fn main() {
     println!();
 
     let reference_to_nothing = dangle();    // no value for it to be borrowed from
+    let reference_to_string = not_dangle();
 }
 
 fn calculate_length(s: &String) -> usize {  // references, &
@@ -38,5 +39,10 @@ fn change(some_string: &mut String) {
 
 fn dangle() -> &String {
     let s = String::from("hello");
-    &s
+    &s                                      // missing lifetime specifier
+}
+
+fn not_dangle() -> String {
+    let s = String::from("hello");
+    s
 }

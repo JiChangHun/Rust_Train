@@ -18,7 +18,7 @@ fn main() {
     let (word1, word2) = words_char(&s3);
     println!("words_char test: {} ... {}", word1, word2);
 
-    let s3_literal = "hello world";
+    let s3_literal = "hello world";                         // string literal is slice and type &str
 
     let (w1, w2) = words(&s3_literal[..]);
     println!("words literal: {} .... {}", w1, w2);

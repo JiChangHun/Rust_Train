@@ -36,6 +36,7 @@ fn main() {
 
     let x = 5;
     makes_copy(x);
+    println!("not taked x = {}", x);
 
     println!();
 
