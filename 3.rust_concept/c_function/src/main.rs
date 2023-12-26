@@ -13,6 +13,7 @@ fn main() {
 
     let f = five();
     println!("The value of f is {f}");
+
     let six = plus_one(f);
     println!("The value of six is {six}");
 }
